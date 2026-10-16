@@ -128,7 +128,7 @@ export default function VideoMeetComponent() {
 
         }
 
-
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [video, audio])
     let getMedia = () => {
         setVideo(videoAvailable);
@@ -395,6 +395,7 @@ export default function VideoMeetComponent() {
         if (screen !== undefined) {
             getDislayMedia();
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [screen])
     let handleScreen = () => {
         setScreen(!screen);
@@ -406,17 +407,6 @@ export default function VideoMeetComponent() {
             tracks.forEach(track => track.stop())
         } catch (e) { }
         window.location.href = "/"
-    }
-
-    let openChat = () => {
-        setModal(true);
-        setNewMessages(0);
-    }
-    let closeChat = () => {
-        setModal(false);
-    }
-    let handleMessage = (e) => {
-        setMessage(e.target.value);
     }
 
     const addMessage = (data, sender, socketIdSender) => {
