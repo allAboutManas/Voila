@@ -151,7 +151,7 @@ MONGO_URI=mongodb+srv://<username>:<password>@cluster0.example.mongodb.net/video
 
 ### Frontend (`frontend/.env` or Vercel)
 ```env
-REACT_APP_BACKEND_URL=https://voila-oa1x.onrender.com
+REACT_APP_BACKEND_URL=https://<your-backend-app>.onrender.com
 ```
 
 ---
@@ -199,7 +199,7 @@ npm start
    - **Build Command**: `npm install`
    - **Start Command**: `npm start`
 4. Add environment variable `MONGO_URI` with your MongoDB connection string.
-5. Deploy and copy your Render URL (e.g., `https://voila-oa1x.onrender.com`).
+5. Deploy and copy your Render URL (e.g., `https://<your-backend-app>.onrender.com`).
 
 ### Frontend on Vercel
 1. Import the same repository into [Vercel](https://vercel.com).
@@ -207,7 +207,7 @@ npm start
    - **Root Directory**: `frontend`
    - **Framework Preset**: `Create React App`
 3. Add environment variable:
-   - `REACT_APP_BACKEND_URL` = `https://voila-oa1x.onrender.com`
+   - `REACT_APP_BACKEND_URL` = `https://<your-backend-app>.onrender.com`
 4. Deploy! The included `frontend/vercel.json` ensures client-side routing works without 404s.
 
 ---
