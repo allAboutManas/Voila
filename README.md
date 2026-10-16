@@ -116,14 +116,16 @@ Video/
 
 ## 📡 REST API Reference
 
-Base URL: `http://localhost:8000/api/v1/users` (or production Render URL)
+Base URL: `http://localhost:8000` (or production Render URL)
 
 | Method | Endpoint | Description | Payload / Query |
 | :--- | :--- | :--- | :--- |
-| `POST` | `/register` | Register a new user | `{ "name": "...", "username": "...", "password": "..." }` |
-| `POST` | `/login` | Authenticate user & receive token | `{ "username": "...", "password": "..." }` |
-| `POST` | `/add_to_activity` | Add meeting code to user history | `{ "token": "...", "meeting_code": "..." }` |
-| `GET` | `/get_all_activity` | Retrieve all past meetings for user | Query param: `?token=<user_token>` |
+| `GET` | `/health` | Server health check | None (returns `{ status: "ok", ... }`) |
+| `GET` | `/` | Root server status | None (returns text confirmation) |
+| `POST` | `/api/v1/users/register` | Register a new user | `{ "name": "...", "username": "...", "password": "..." }` |
+| `POST` | `/api/v1/users/login` | Authenticate user & receive token | `{ "username": "...", "password": "..." }` |
+| `POST` | `/api/v1/users/add_to_activity` | Add meeting code to user history | `{ "token": "...", "meeting_code": "..." }` |
+| `GET` | `/api/v1/users/get_all_activity` | Retrieve all past meetings for user | Query param: `?token=<user_token>` |
 
 ---
 
