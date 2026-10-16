@@ -1,5 +1,10 @@
 # 📹 Voila - Video Conferencing Platform
 
+[![Live Demo](https://img.shields.io/badge/Live_Demo-voila--nu.vercel.app-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://voila-nu.vercel.app/)
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg?style=for-the-badge)](https://opensource.org/licenses/ISC)
+
+> 🌐 **Live Demo**: [https://voila-nu.vercel.app](https://voila-nu.vercel.app/)
+
 A full-stack, real-time video conferencing web application built with **React**, **Node.js**, **Express**, **Socket.io**, **WebRTC**, and **MongoDB**. Supports peer-to-peer video/audio calling, screen sharing, in-meeting live text chat, user authentication, and meeting history tracking.
 
 ---
@@ -209,6 +214,7 @@ npm start
 3. Add environment variable:
    - `REACT_APP_BACKEND_URL` = `https://<your-backend-app>.onrender.com`
 4. Deploy! The included `frontend/vercel.json` ensures client-side routing works without 404s.
+5. **Live URL**: [https://voila-nu.vercel.app](https://voila-nu.vercel.app/)
 
 ---
 
